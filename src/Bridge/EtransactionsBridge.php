@@ -71,4 +71,14 @@ final class EtransactionsBridge implements EtransactionsBridgeInterface
 
         return $currentRequest->isMethod('GET');
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isPostMethod()
+    {
+        $currentRequest = $this->requestStack->getCurrentRequest();
+
+        return $currentRequest->isMethod('POST');
+    }
 }

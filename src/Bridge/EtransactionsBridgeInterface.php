@@ -35,4 +35,9 @@ interface EtransactionsBridgeInterface
      * @return bool
      */
     public function isGetMethod();
+
+    /**
+     * @return bool
+     */
+    public function isPostMethod();
 }

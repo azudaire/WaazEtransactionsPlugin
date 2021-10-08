@@ -98,7 +98,7 @@ final class CaptureAction implements ActionInterface, ApiAwareInterface
 
         if ($transactionReference !== null) {
 
-            if ($this->etransactionsBridge->isPostMethod()) {
+            if ($this->etransactionsBridge->isGetMethod()) {
 
                 $model['status'] = $this->etransactionsBridge->paymentVerification($this->api['hmac']) ?
                     PaymentInterface::STATE_COMPLETED : PaymentInterface::STATE_CANCELLED;

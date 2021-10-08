@@ -17,6 +17,9 @@ class Etransactions
     const TEST = "https://preprod-tpeweb.e-transactions.fr/cgi/MYchoix_pagepaiement.cgi";
     const PRODUCTION = "https://tpeweb.e-transactions.fr/cgi/MYchoix_pagepaiement.cgi";
 
+    // const TEST = "https://recette-tpeweb.e-transactions.fr/php/";
+    // const PRODUCTION = "https://tpeweb.e-transactions.fr/php/";
+
     const INTERFACE_VERSION = "IR_WS_2.17";
     const INSTALMENT = "INSTALMENT";
 
